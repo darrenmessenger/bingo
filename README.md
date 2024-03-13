@@ -62,3 +62,29 @@ additional boards listed:
 Can you write a program that tells you which board to pick to guarantee a win against the giant squid?
 
 # Solution
+
+## Overview
+This project contains a Node.js program designed to predict the outcome of a bingo game against a giant squid. Using a set of randomly called numbers and bingo boards, the program determines which bingo board will win first. This enables the user which board they should pick to guarantee a win.
+
+## How It Works
+The program reads a sequence of called numbers and a list of bingo boards from text files. It then runs through the bingo game by marking numbers on each board as they are called. 
+
+### Key Features
+- **Data Reading**: Extracts game data from external `.txt` files.
+- **Win Condition Check**: Evaluates each board against the called numbers to determine if it has won, based on completing a full row or column.
+- **Winning Strategy**: Identifies the first board to win.
+
+## Unit Testing
+Unit tests have been written to verify the correctness of the isWinner function, which assesses whether a given board has won based on the called numbers. Testing is performed using Jest.
+
+### Running Tests
+To execute the tests, install Jest and run the following command in your terminal:
+```npm test```
+
+## Setup and Execution
+1. Clone this repository to your local machine.
+2. Ensure you have Node.js installed.
+3. If required, change the called numbers and boards in the `data` directory.
+4. Run the program using Node.js:
+```npm run build:start```
+
