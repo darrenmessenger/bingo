@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es6",         // or a higher version like esnext
+    "module": "commonjs",    // for Node.js compatibility
+    "esModuleInterop": true, // allows default imports from modules with no default export
+    "strict": true,          // enable all strict type-checking options
+    "outDir": "./dist"       // output directory for compiled files
+  },
+  "include": ["src/**/*"],   // replace with your source directory
+  "exclude": ["node_modules"]
+}
